@@ -54,7 +54,7 @@
     "windows": [
       {
         "title": "Flourish Rust",
-        "width": 600,
+        "width": 700,
         "height": 500,
         "resizable": false,
         "fullscreen": false,
