@@ -2,7 +2,7 @@
   import { open } from "@tauri-apps/api/dialog";
   import Titlebar from "./lib/Titlebar.svelte";
   import installRust from "./lib/installRust";
-  import { getInstallDirectories } from "./settings";
+  import { getInstallDirectories, reset } from "./settings";
   import { defaultInstallDir } from "./lib/constants";
 
   let installDir = defaultInstallDir;
@@ -31,6 +31,7 @@
   };
 </script>
 
+<button on:click={reset}>Ttest</button>
 <main class="w-full h-screen flex items-center justify-center font-quicksand">
   <div class="w-full h-full bg-black bg-opacity-10">
     <Titlebar />
