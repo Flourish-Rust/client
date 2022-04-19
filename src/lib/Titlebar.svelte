@@ -10,11 +10,15 @@
   };
 </script>
 
-<div
-  data-tauri-drag-region
-  class="titlebar flex absolute justify-end items-center w-full"
->
-  <div class="titlebar-button" id="titlebar-minimize">
+<div class="titlebar flex absolute items-center w-full">
+  <span data-tauri-drag-region class="w-full ml-2 font-bold text-white"
+    >FLOURISH RUST LAUNCHER</span
+  >
+  <div
+    data-tauri-drag-region
+    class="titlebar-button flex w-full justify-end"
+    id="titlebar-minimize"
+  >
     <button on:click={minimizeWindow}
       ><i
         class="bx bx-sm bx-minus text-white hover:bg-black bg-opacity-5 p-2 transition-all"
