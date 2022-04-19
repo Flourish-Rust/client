@@ -3,8 +3,9 @@
   import Titlebar from "./lib/Titlebar.svelte";
   import installRust from "./lib/installRust";
   import { getInstallDirectories } from "./settings";
+  import { defaultInstallDir } from "./lib/constants";
 
-  let installDir = "C:/FlourishRust";
+  let installDir = defaultInstallDir;
   let version = "legacy";
   let isPlayable = false;
 
